@@ -13,4 +13,4 @@ RUN wget -q https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-o
  && dpkg -i elasticsearch-oss-7.1.1-amd64.deb \
  && rm -f elasticsearch-oss-7.1.1-amd64.deb
 RUN apt-get update \
- && apt install -y opendistroforelasticsearch
+ && apt-get install -y opendistroforelasticsearch=1.1.0-1
